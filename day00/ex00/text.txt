@@ -1,0 +1,3 @@
+mail -s "[Most awesome cat in the world][scarrera][let me flatter you]" "kwame@42.fr" << EOF
+> Write a beautiful message about 42 and motivation, etc...
+> EOF <--- finished for send it
