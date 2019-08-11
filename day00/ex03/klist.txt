@@ -1,0 +1,6 @@
+Credentials cache: API:49843
+        Principal: scarrera@42.US.ORG
+
+  Issued                Expires               Principal
+Jul  9 19:01:38 2019  Jul 10 05:01:38 2019  krbtgt/42.US.ORG@42.US.ORG
+Jul  9 19:01:39 2019  Jul 10 05:01:38 2019  ldap/ldap-master.42.us.org@42.US.ORG
