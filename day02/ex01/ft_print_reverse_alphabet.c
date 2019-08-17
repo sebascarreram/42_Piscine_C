@@ -12,7 +12,7 @@
 
 int	ft_putchar(char c);
 
-void	ft_print_reverse_alpahabet(void)
+void	ft_print_reverse_alphabet(void)
 {
 	char letter;
 
