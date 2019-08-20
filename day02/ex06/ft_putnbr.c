@@ -1,5 +1,5 @@
 #include <unistd.h>
-#include <stdio.h>
+//#include <stdio.h>
 
 void	ft_putchar(char c)
 {
@@ -11,24 +11,25 @@ void	ft_putnbr(int nb)
 	if (nb < 0)
 	{
 		ft_putchar('-');
-		ft_putnbr(-nb);
-		ft_putchar('\n');
-		return ;
-	}
-	if (nb >= 10)
-	{
-		ft_putnbr(nb / 10);
-		ft_putnbr(nb % 10);
-		ft_putchar('\n');
+		ft_putnbr(nb * (-1));
+		//ft_putchar('\n');
+		//return ;
 	}
 	else
-		ft_putchar(nb + '0');
+	{
+		if (nb  >= 10)
+			ft_putnbr(nb / 10);
+		ft_putchar((nb % 10) + '0');
+		//ft_putchar('\n');
+	}
 	//ft_putchar('\n');
 }
 
 int main()
 {
-	//printf("%s\n", ft_putnbr(42));
-	ft_putnbr(42);
+	int a;
+
+	a = -42;
+	ft_putnbr(a);
 	return (0);
 }
