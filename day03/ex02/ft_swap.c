@@ -10,10 +10,27 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 void	ft_swap(int *a, int *b)
 {
 	int t;
+
 	t = *a;
 	*a = *b;
 	*b = t;
+}
+// Not down for submit and not #include 
+int main()
+{
+	int a;
+	int b;
+
+	a = 10;
+	b = 20;
+	printf("Number1: %i, Number2: %i\n", a, b);
+	ft_swap(&a, &b);
+	printf("Swapped !\n");
+	printf("Number1: %i, Number2: %i\n", a, b);
+	return (0);
 }
