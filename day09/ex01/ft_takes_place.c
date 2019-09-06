@@ -46,8 +46,3 @@ void	ft_takes_place(int hour)
 		printf("THE FOLLOWING TAKES PLACE BETWEEN %d.00 P.M. AND %d.00 P.M.\n", i, (i + 1) % 12);
 	}
 }
-int main ()
-{
-ft_takes_place(13);
-return (0);
-}
