@@ -7,7 +7,7 @@ char 	*ft_strrev(char *str)
 	int leng;
 	char temp;
 	
-	leng = 0;
+	leng = -1;
 	while (str[++leng])
 		;
 	index = -1;
