@@ -9,24 +9,32 @@
 /*   Updated: 2019/07/13 21:19:15 by scarrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
 int	ft_iterative_factorial(int nb)
 {
-	int a;
+	int index;
+	int result;
 
-	if (nb > 0 && nb < 13)
+	index = 1;
+	result = 1;	
+	if (nb < 0)
+		return (0);
+	else if (nb >= 0 && nb < 13)
 	{
-		a = nb;
-		nb--;
-		while (nb > 1)
-		{
-			a = a * nb;
-			nb--;
-		}
+		while (++index <= nb)
+			result *= index;
+		return (result);
 	}
 	else
-	{
 		return (0);
-	}
-	return (a);
+}
+
+int main()
+{
+	int test;
+	
+	test = 14;
+	printf("%i\n", ft_iterative_factorial(test));
+	return (0);
 }
