@@ -9,19 +9,23 @@
 /*   Updated: 2019/07/13 21:24:15 by scarrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <stdio.h>
 
 int	ft_recursive_factorial(int nb)
 {
 	if (nb > 1 && nb < 13)
-	{
 		return (nb * ft_recursive_factorial(nb - 1));
-	}
-	else if (nb == 1)
-	{
+	else if (nb == 0 || nb == 1)
 		return (1);
-	}
 	else
-	{
 		return (0);
-	}
+}
+
+int main()
+{
+	int test;
+	
+	test = 12;
+	printf("%i\n", ft_recursive_factorial(test));
+	return (0);
 }
