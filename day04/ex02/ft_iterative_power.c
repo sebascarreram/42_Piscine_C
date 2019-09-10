@@ -10,15 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
 int	ft_iterative_power(int nb, int power)
 {
 	int a;
 
 	a = 1;
-	if (power == 1)
-	{
+	if (power == 0)
+		return (0);
+	else if(power == 1)
 		return (nb);
-	}
 	else
 	{
 		while (power >= 1)
@@ -28,4 +30,15 @@ int	ft_iterative_power(int nb, int power)
 		}
 	}
 	return (a);
+}
+// NOT #INCLUDE AND NOT MAIN FOR SUBMIT
+int main()
+{
+	int number;
+	int pow;
+	
+	number = 4;
+	pow = 1;
+	printf("%i\n", ft_iterative_power(number, pow));
+	return (0);
 }
