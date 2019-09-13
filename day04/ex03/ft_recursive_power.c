@@ -14,7 +14,9 @@
 
 int	ft_recursive_power(int nb, int power)
 {
-	if (power == 1)
+	if (power < 0)
+		return (0);
+	else if (power == 1)
 		return (nb);
 	else if (power == 0)
 		return (1);
@@ -27,8 +29,8 @@ int main()
 	int num1;
 	int num2;
 	
-	num1 = 4;
-	num2 = 0;
+	num1 = 5;
+	num2 = 10;
 	printf("%i\n", ft_recursive_power(num1,num2));
 	return (0);
 }
