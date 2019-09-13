@@ -18,14 +18,14 @@ int	ft_iterative_power(int nb, int power)
 
 	a = 1;
 	if (power == 0)
-		return (0);
+		return (1);
 	else if(power == 1)
 		return (nb);
 	else
 	{
 		while (power >= 1)
 		{
-			a = a * nb;
+			a *= nb;
 			power--;
 		}
 	}
@@ -37,8 +37,8 @@ int main()
 	int number;
 	int pow;
 	
-	number = 4;
-	pow = 1;
+	number = 10;
+	pow = 2;
 	printf("%i\n", ft_iterative_power(number, pow));
 	return (0);
 }
