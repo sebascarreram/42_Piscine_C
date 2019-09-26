@@ -12,7 +12,7 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 		index++;
 	}
 	if (index == n)
-		return ('a');
+		return (0);
 	if (s1[n] != '\0')
 		return (s1[n]);
 	if (s2[n] != '\0')
