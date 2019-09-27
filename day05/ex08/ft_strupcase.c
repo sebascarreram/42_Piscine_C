@@ -14,9 +14,11 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 
-int	main()
+int	main(int argc, char **argv)
 {	
-	char name[] = "seBas";
-	printf("%s\n", ft_strupcase(name));
+	if (argc != 2)
+		return (0);
+	else
+		printf("%s\n", ft_strupcase(argv[1]));
 	return (0);
 }
