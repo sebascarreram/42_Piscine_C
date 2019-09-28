@@ -8,7 +8,7 @@ int	isnumeric(int nb)
 		return (0);
 }
 
-int ft_str_is_numeric(char *str)
+int 	ft_str_is_numeric(char *str)
 {
 	int index;
 
@@ -23,7 +23,7 @@ int ft_str_is_numeric(char *str)
 	return (1);
 }
 
-int main()
+int 	main()
 {
 	char random[] = "53455";
 	printf("%i\n", ft_str_is_numeric(random));
