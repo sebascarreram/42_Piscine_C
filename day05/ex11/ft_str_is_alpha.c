@@ -13,6 +13,8 @@ int 	ft_str_is_alpha(char *str)
 	int index;
 
 	index = 0;
+	if (str[0] == '\0')
+		return (1);
 	while (str[index] != '\0')
 	{
 		if (isalpha(str[index]))
