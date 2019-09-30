@@ -9,23 +9,23 @@
 /*   Updated: 2019/07/17 23:38:57 by scarrera         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
 
-void	ft_putchar(char c);
-
-void	ft_print_program_name(char *str)
+void	ft_putchar(char c)
 {
-	int i;
-
-	i = 0;
-	while (str[i])
-	{
-		ft_putchar(str[i]);
-		i++;
-	}
+	write (1, &c, 1);
 }
 
-int		main(int argc, char *argv[])
+int	main(int argc, char *argv[])
 {
-	ft_print_program_name(argv[0]);
+	int index;
+	
+	index = -1;
+	if (argc > 0)
+	{
+		while (argv[0][++index])
+			ft_putchar(argv[0][index]);
+		ft_putchar('\n');
+	}
 	return (0);
 }
