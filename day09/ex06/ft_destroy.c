@@ -10,4 +10,26 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include "ft_ultimator.h"
+
+void	ft_destroy(char ***factory)
+{
+	int index;
+	int y;
+	
+	index = 0;
+	while(factory[index])
+	{
+		y = 0;
+		while (factory[index][y])
+		{
+			free(factory[index][y]);
+			y++;
+		}
+		free(factory[index]);
+		index++;
+	}
+	free(factory);
+}
 
