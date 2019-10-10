@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stdlib.h>
+#include <stdio.h> // NOT SUBMIT
 
 int	*ft_range(int min, int max)
 {
@@ -28,4 +29,13 @@ int	*ft_range(int min, int max)
 		min++;
 	}
 	return (tab);
+}
+// NOT SUBMIT
+int	main()
+{
+	int one = 2;
+	int two = 5;
+	
+	printf("%i\n", ft_range(one, two));
+	return (0);
 }
